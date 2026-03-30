@@ -1,0 +1,103 @@
+.dashboard { max-width: 1100px; }
+
+.page-header { margin-bottom: 28px; }
+.page-header h1 { font-size: 28px; font-weight: 700; color: #1a2e1a; }
+.page-header p { color: #5a6e5a; margin-top: 4px; }
+
+.loading {
+  display: flex; align-items: center; justify-content: center;
+  height: 60vh; font-size: 18px; color: #5a6e5a;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.stat-icon { font-size: 28px; margin-bottom: 8px; }
+.stat-value { font-size: 36px; font-weight: 700; font-family: 'Kanit', sans-serif; }
+.stat-label { color: #5a6e5a; font-size: 13px; margin-top: 4px; }
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.chart-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a2e1a;
+}
+
+.recent-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.recent-header h3 { font-size: 16px; font-weight: 600; }
+
+.btn-link {
+  background: none;
+  color: #00c853;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.btn-link:hover { text-decoration: underline; }
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #f8faf8;
+  color: #5a6e5a;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e0e8e0;
+}
+
+.data-table td {
+  padding: 12px 12px;
+  border-bottom: 1px solid #f0f4f0;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.data-table tbody tr:hover { background: #f8faf8; }
+.data-table tbody tr:last-child td { border-bottom: none; }

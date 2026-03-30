@@ -1,0 +1,103 @@
+.lead-detail { max-width: 1000px; }
+
+.detail-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 24px;
+}
+
+.btn-back {
+  background: white; color: #1a2e1a;
+  padding: 10px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 600;
+  border: 2px solid #d0e0d0;
+}
+
+.btn-back:hover { border-color: #00c853; color: #00c853; }
+
+.detail-actions { display: flex; gap: 10px; }
+
+.btn-edit {
+  background: #e3f2fd; color: #0288d1;
+  padding: 10px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 600;
+}
+
+.btn-edit:hover { background: #0288d1; color: white; }
+
+.btn-del {
+  background: #fdecea; color: #c62828;
+  padding: 10px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 600;
+}
+
+.btn-del:hover { background: #c62828; color: white; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.detail-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.detail-title-row {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 24px; flex-wrap: wrap;
+}
+
+.detail-title-row h1 { font-size: 24px; font-weight: 700; }
+
+.detail-fields { display: flex; flex-direction: column; gap: 14px; }
+
+.detail-field {
+  display: flex; align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f0f4f0;
+}
+
+.detail-field:last-child { border-bottom: none; }
+
+.field-label {
+  width: 130px; flex-shrink: 0;
+  font-size: 13px; font-weight: 600; color: #5a6e5a;
+}
+
+.field-value { font-size: 15px; font-weight: 500; }
+
+.detail-note {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f8faf8;
+  border-radius: 10px;
+  border-left: 4px solid #00c853;
+}
+
+.note-label { font-size: 13px; font-weight: 700; color: #1a2e1a; margin-bottom: 8px; }
+.note-text { font-size: 14px; color: #3a4e3a; line-height: 1.6; }
+
+.detail-side .detail-card h3 {
+  font-size: 15px; font-weight: 700; margin-bottom: 16px;
+}
+
+.activity-list { display: flex; flex-direction: column; gap: 12px; }
+
+.activity-item {
+  padding: 12px 14px;
+  background: #f8faf8;
+  border-radius: 8px;
+  border-left: 3px solid #00c853;
+}
+
+.activity-action { font-size: 13px; font-weight: 600; color: #1a2e1a; margin-bottom: 4px; }
+
+.activity-change { font-size: 12px; margin-bottom: 4px; }
+.activity-change .old { color: #c62828; }
+.activity-change .new { color: #2e7d32; font-weight: 600; }
+
+.activity-time { font-size: 11px; color: #aaa; }
